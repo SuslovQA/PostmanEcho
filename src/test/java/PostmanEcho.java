@@ -54,7 +54,7 @@ public class PostmanEcho {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("authenticated", equalTo(false))
+                .body("authenticated", equalTo(true))
         ;
     }
 }
