@@ -1,4 +1,4 @@
-image: Ubuntu2004  # образ для сборки
+image: Ubuntu  # образ для сборки
 
 stack: jdk 11  # версия JDK
 
@@ -12,5 +12,5 @@ build_script:
   # Запускаем автотесты
   # Для проектов на базе Selenide необходимо добавить параметр для запуска браузера
   # в headless режиме -Dselenide.headless=true, параметр --info должен остаться
-  - ./gradlew test --info
   - chmod +x gradlew
+  - ./gradlew test --info
